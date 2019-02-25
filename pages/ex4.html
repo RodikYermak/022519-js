@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example 4</title>
+</head>
+<body> <!-- my comment-->
+    <section>
+       
+        <h1 id="hi">Hello</h1>
+        <p>I'm a paragraph</p>
+        <div id="new">I'm a div</div>
+        
+        
+        
+    </section>
+    
+    <script>
+        //alert(document.body.innerHTML); // returns all html within
+        //document.body.innerHTML = "I'm new body content";
+        
+        document.getElementById('hi').innerText = 'bye'; // allows to change the text node of the h1
+        document.getElementById('new').outerHTML = '<h4 id="new"> new text</h4>'; // change the div to an h4 (replacing the div tag with whatever new content you specify)
+    </script>
+</body>
+</html>
